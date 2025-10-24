@@ -13,7 +13,7 @@ Q26-27: When its reset, the same pattern appears again.
 
 Q28: The fill() method sets all elements of the state array to 0.
 
-Q29: 
+Q29: I modified the reset method to seed more than one cell with a value of 1. When running the automaton, the resulting patterns are still deterministic: the same initial configuration produces the same pattern each time, but different starting configurations lead to different patterns.
 
 Q30: I modified the update() method to use conditional operators instead of if-else statements for the left and right cells. The code is now shorter but works the same way as before.
 
