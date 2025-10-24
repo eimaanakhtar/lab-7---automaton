@@ -27,8 +27,6 @@ Q34: I created a calculateNextState() method that calculates the next state of a
 
 Q35: I modified the calculateNextState method to try alternative rules for updating the cells. For example, I used (left + right) % 2 instead of the original (left + center + right) % 2. This produced different patterns in the automaton, showing how changing the rule affects the evolution of the cells. I also tried other combinations like (center + right + center * right + left * center * right) % 2 to explore more complex patterns.
 
-Q36:
+Q36: I extended the state array by one element to avoid testing for the end of the array during updates. The extra element acts as a fixed right-hand neighbor (value 0) for the last cell. This simplified the code and ensured all cells could be updated without special conditions for the boundaries.
 
-Q37:
-
-Q38:
+Q37: I experimented with different initial patterns by seeding the automaton in other positions and with multiple cells. Changing the starting cells produces different evolution patterns, demonstrating that the initial state significantly affects the automaton’s behavior.
